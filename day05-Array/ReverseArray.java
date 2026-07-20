@@ -1,7 +1,7 @@
 /*
- * Program: Reverse ARRAY
- * Description: Reverse the given array .
- * Author: Sandesh Deore
+ * Program      : Reverse Array
+ * Description  : Reverses the given integer array using the two-pointer technique.
+ * Author       : Sandesh Deore
  */
 
 import java.util.*;
