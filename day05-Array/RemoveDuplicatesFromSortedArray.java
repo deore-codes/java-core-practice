@@ -1,3 +1,10 @@
+/*
+ * Program      : Remove Duplicates from Sorted Array
+ * Description  : Removes duplicate elements from a sorted array using the two-pointer technique.
+ * Time Complexity : O(n)
+ * Space Complexity: O(1)
+ * Author       : Sandesh Deore
+ */
 import java.util.*;
 
 public class RemoveDuplicatesFromSortedArray
