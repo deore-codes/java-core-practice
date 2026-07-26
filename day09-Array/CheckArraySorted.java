@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class ReverseArray
+class CheckArraySorted
 {
     public static void main(String args[])
     {
@@ -18,39 +18,41 @@ class ReverseArray
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("\nOriginal Array:");
+        boolean sorted = true;
 
-        for(int i = 0; i < arr.length; i++)
+        for(int i = 0; i < arr.length - 1; i++)
         {
-            System.out.print(arr[i] + " ");
+            if(arr[i] > arr[i + 1])
+            {
+                sorted = false;
+                break;
+            }
         }
 
-        System.out.println("\n\nReversed Array:");
-
-        for(int i = arr.length - 1; i >= 0; i--)
+        if(sorted)
         {
-            System.out.print(arr[i] + " ");
+            System.out.println("Array is Sorted");
+        }
+        else
+        {
+            System.out.println("Array is Not Sorted");
         }
 
         sc.close();
     }
 }
---------------------------------------------------------
 /*
-OUTPUT :
+INTPUT:
+Enter array size:
+5
 
-Enter array size: 5
 Enter array elements:
 10
-20
+50
 30
 40
-50
+20
 
-Original Array:
-10 20 30 40 50
-
-Reversed Array:
-50 40 30 20 10
-
+OUTPUT:
+Array is Not Sorted
 */
